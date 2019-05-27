@@ -60,15 +60,17 @@ const counterFactory = () => {
     decrement: () => {
       return --count;
     }
-  }
+  };
   return counterObject;
 };
 
 const newCount = counterFactory();
 
-console.log(newCount.increment());
-console.log(newCount.increment());
-console.log(newCount.increment());
-console.log(newCount.increment());
-console.log(newCount.decrement());
-console.log(newCount.decrement());
+console.log(counterFactory().increment());
+console.log(counterFactory().increment());
+// console.log(newCount.increment());
+// console.log(newCount.increment());
+// console.log(newCount.increment());
+// console.log(newCount.increment());
+// console.log(newCount.decrement());
+// console.log(newCount.decrement());

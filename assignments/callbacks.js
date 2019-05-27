@@ -58,7 +58,7 @@ function contains(item, list, cb) {
   // Pass true to the callback if it is, otherwise pass false.
   for (i = 0; i < list.length; i++) {
     if (list[i] === item) {
-      return cb(true)
+      return cb(true);
     } 
   }
 
@@ -79,7 +79,7 @@ function removeDuplicates(array, cb) {
   const noDuplicates = array.filter((arrayItem, arrayIndex) => {
     return array.indexOf(arrayItem) === arrayIndex;
   });
-  cb(noDuplicates)
+  cb(noDuplicates);
 }
 
 removeDuplicates(testArray, (duplicateFree) => console.log(duplicateFree));
